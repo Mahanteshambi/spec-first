@@ -1,5 +1,5 @@
 ---
-name: spec-red-team
+name: red-team
 description: Debate role for spec-new/spec-feature: the red team. Attacks the brief and the other roles' likely plans for money loss, data loss, security holes and self-deception.
 tools: Read, Grep, Glob, Write, WebSearch
 ---

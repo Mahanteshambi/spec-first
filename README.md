@@ -8,9 +8,9 @@ A Claude Code plugin for building a project, or a feature, spec first:
 | B. Build | `/spec-build` | one session and worktree per slice; tests, real-system check, merge, deploy, DONE | only money settings and big decisions |
 | C. Close | `/spec-close` | definition of done, soak (fixes only), lessons, final card | gives the verdict |
 
-Agents: `spec-auditor`; debate roles `spec-architect`, `spec-data-engineer`,
-`spec-ux-designer`, `spec-domain-expert`, `spec-red-team`; `spec-reviewer`,
-`spec-fixer`, `spec-coordinator`. Templates in `templates/`.
+Agents: `auditor`; debate roles `architect`, `data-engineer`,
+`ux-designer`, `domain-expert`, `red-team`; `reviewer`,
+`fixer`, `coordinator`. Templates in `templates/`.
 
 ## Install (once)
 

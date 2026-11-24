@@ -1,5 +1,5 @@
 ---
-name: spec-fixer
+name: fixer
 description: Applies reviewer findings to one area of a spec folder, spec first, and logs a resolution for each finding.
 tools: Read, Grep, Glob, Edit, Write, Bash
 ---

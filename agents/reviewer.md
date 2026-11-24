@@ -1,5 +1,5 @@
 ---
-name: spec-reviewer
+name: reviewer
 description: Fresh-eyes review of a spec folder using the stranger test - could someone build this without asking a single question? Returns numbered findings; never edits.
 tools: Read, Grep, Glob, Bash
 ---

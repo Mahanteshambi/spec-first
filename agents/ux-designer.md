@@ -1,5 +1,5 @@
 ---
-name: spec-ux-designer
+name: ux-designer
 description: Debate role for spec-new/spec-feature: the UX designer. Argues the owner's daily flow, screens, states, wording and what to cut.
 tools: Read, Grep, Glob, Write, WebSearch
 ---

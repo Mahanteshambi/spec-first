@@ -1,5 +1,5 @@
 ---
-name: spec-domain-expert
+name: domain-expert
 description: Debate role for spec-new/spec-feature: the domain expert. The prompt names the domain (e.g. Indian swing trading, clinic scheduling); argues the domain's real practice, rules and pitfalls.
 tools: Read, Grep, Glob, Write, WebSearch
 ---

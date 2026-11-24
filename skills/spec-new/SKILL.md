@@ -21,7 +21,7 @@ then one question. No app code, no deletions, until the spec is approved.
 ## Phase A: Define (owner approves each step)
 
 ### A1 Audit → `audit.md`
-- Fan out `spec-auditor` agents in parallel, one per area (backend, data,
+- Fan out `auditor` agents in parallel, one per area (backend, data,
   frontend, runtime/infra, docs/specs). Brief each with the area and "what
   exists, what works, what is dead".
 - Write: what exists, labels (keep / hide / delete / unknown), data sources
@@ -38,8 +38,8 @@ then one question. No app code, no deletions, until the spec is approved.
 
 ### A3 Debate → `debate/<role>.md`, then `decisions.md`
 - Run the role agents in parallel, each reading `brief.md` and `audit.md`:
-  `spec-architect`, `spec-data-engineer`, `spec-ux-designer`,
-  `spec-domain-expert` (name the domain in its prompt) and `spec-red-team`.
+  `architect`, `data-engineer`, `ux-designer`,
+  `domain-expert` (name the domain in its prompt) and `red-team`.
   Drop a role the project doesn't need (no data → no data engineer); add
   another domain expert if the project spans two domains.
 - Moderate: merge agreement into "agreed", cut what the brief rules out,
@@ -62,9 +62,9 @@ then one question. No app code, no deletions, until the spec is approved.
 - `tasks.md`: vertical slices (most valuable first), a dependency diagram,
   requirement→slice table (each ID in exactly one slice), status table,
   and the **run's definition of done** (what must be true to close the run).
-- Review: run `spec-reviewer` (the stranger test: "could someone build
+- Review: run `reviewer` (the stranger test: "could someone build
   this without asking a single question?"). If the spec is large, split
-  the review by area and run reviewers in parallel, then `spec-fixer` agents
+  the review by area and run reviewers in parallel, then `fixer` agents
   in parallel, one per area. Rule on conflicts yourself and log the rulings.
 - Present for approval. On "approve", mark status approved and add a `D<n>`.
 
