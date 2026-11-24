@@ -1,5 +1,5 @@
 ---
-name: frame-auditor
+name: spec-auditor
 description: Read-only audit of one area of a codebase for the framework's Phase A1. Reports what exists, what works, what is dead, and where numbers of record come from.
 tools: Read, Grep, Glob, Bash
 ---

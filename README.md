@@ -4,12 +4,12 @@ A Claude Code plugin for building a project, or a feature, spec first:
 
 | Phase | Skill | What happens | Owner does |
 |---|---|---|---|
-| A. Define | `/frame-new` or `/frame-feature` | audit → grill → debate → mockups → spec freeze | answers one question at a time; approves each step |
-| B. Build | `/frame-slice` | one session and worktree per slice; tests, real-system check, merge, deploy, DONE | only money settings and big decisions |
-| C. Close | `/frame-close` | definition of done, soak (fixes only), lessons, final card | gives the verdict |
+| A. Define | `/spec-new` or `/spec-feature` | audit → grill → debate → mockups → spec freeze | answers one question at a time; approves each step |
+| B. Build | `/spec-build` | one session and worktree per slice; tests, real-system check, merge, deploy, DONE | only money settings and big decisions |
+| C. Close | `/spec-close` | definition of done, soak (fixes only), lessons, final card | gives the verdict |
 
-Agents: `frame-auditor`, `frame-debater`, `frame-spec-reviewer`, `frame-fixer`,
-`frame-coordinator`. Templates in `templates/`.
+Agents: `spec-auditor`, `spec-debater`, `spec-reviewer`, `spec-fixer`,
+`spec-coordinator`. Templates in `templates/`.
 
 ## Install (once)
 
@@ -20,7 +20,7 @@ In Claude Code:
 
 ## Per project
 
-1. `/frame-new` (or `/frame-feature` in a project that has a spec).
+1. `/spec-new` (or `/spec-feature` in a project that has a spec).
 2. Before building, copy `templates/CLAUDE.gates.md` into the project's
    CLAUDE.md and fill in the gates.
 3. Optional merge guard: list gated paths as regexes in `.frame/gated-paths`
@@ -35,4 +35,4 @@ broker, and one session held the whole build. Phases B and C fix those.
 
 ## Lessons
 
-`LESSONS.md` collects one-line lessons from each run (frame-close step 3).
+`LESSONS.md` collects one-line lessons from each run (spec-close step 3).

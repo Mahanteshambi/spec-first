@@ -1,9 +1,9 @@
 ---
-name: frame-new
-description: Start a new project or a full reset of an existing one, spec first. Runs Phase A (audit, grill, debate, see, freeze) with a stop after each step, then hands off to /frame-slice for the build and /frame-close to finish. Use when the owner says "new project", "reset", "start from scratch", or invokes /frame-new.
+name: spec-new
+description: Start a new project or a full reset of an existing one, spec first. Runs Phase A (audit, grill, debate, see, freeze) with a stop after each step, then hands off to /spec-build for the build and /spec-close to finish. Use when the owner says "new project", "reset", "start from scratch", or invokes /spec-new.
 ---
 
-# frame-new: define before building
+# spec-new: define before building
 
 The owner reads outcomes, not operations. Every checkpoint is a 5-line summary,
 then one question. No app code, no deletions, until the spec is approved.
@@ -21,7 +21,7 @@ then one question. No app code, no deletions, until the spec is approved.
 ## Phase A: Define (owner approves each step)
 
 ### A1 Audit → `audit.md`
-- Fan out `frame-auditor` agents in parallel, one per area (backend, data,
+- Fan out `spec-auditor` agents in parallel, one per area (backend, data,
   frontend, runtime/infra, docs/specs). Brief each with the area and "what
   exists, what works, what is dead".
 - Write: what exists, labels (keep / hide / delete / unknown), data sources
@@ -38,7 +38,7 @@ then one question. No app code, no deletions, until the spec is approved.
 
 ### A3 Debate → `debate/<role>.md`, then `decisions.md`
 - Pick 3–5 roles for the domain (default: architect, data engineer,
-  UX designer, domain expert, red team). Run `frame-debater` agents in
+  UX designer, domain expert, red team). Run `spec-debater` agents in
   parallel, one per role, each reading `brief.md` and `audit.md`.
 - Moderate: merge agreement into "agreed", cut what the brief rules out,
   and reduce the rest to at most ~8 owner choices. Ask them one at a time.
@@ -60,9 +60,9 @@ then one question. No app code, no deletions, until the spec is approved.
 - `tasks.md`: vertical slices (most valuable first), a dependency diagram,
   requirement→slice table (each ID in exactly one slice), status table,
   and the **run's definition of done** (what must be true to close the run).
-- Review: run `frame-spec-reviewer` (the stranger test: "could someone build
+- Review: run `spec-reviewer` (the stranger test: "could someone build
   this without asking a single question?"). If the spec is large, split
-  the review by area and run reviewers in parallel, then `frame-fixer` agents
+  the review by area and run reviewers in parallel, then `spec-fixer` agents
   in parallel, one per area. Rule on conflicts yourself and log the rulings.
 - Present for approval. On "approve", mark status approved and add a `D<n>`.
 
@@ -72,7 +72,7 @@ then one question. No app code, no deletions, until the spec is approved.
   `templates/CLAUDE.gates.md`. Ask the owner now which gates they keep,
   and record the answer word for word. A gate that changes mid-run is
   updated in CLAUDE.md and decisions.md first, never only in a chat.
-- Then run `/frame-slice` for the first slice, and `/frame-close` at the end.
+- Then run `/spec-build` for the first slice, and `/spec-close` at the end.
 
 ## Rules
 

@@ -1,5 +1,5 @@
 ---
-name: frame-debater
+name: spec-debater
 description: Takes one named role (architect, data engineer, UX designer, domain expert, red team, or another the moderator names) and writes that role's position on the brief for the framework's Phase A3.
 tools: Read, Grep, Glob, Write
 ---

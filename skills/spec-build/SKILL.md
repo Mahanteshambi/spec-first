@@ -1,9 +1,9 @@
 ---
-name: frame-slice
-description: Build one slice of an approved spec in its own session and worktree, to the slice contract (tests, a real-system check, merge, deploy, DONE, card). Also used by the coordinator to start and track slice sessions. Use when the owner says "build the next slice", "start S<n>", or invokes /frame-slice.
+name: spec-build
+description: Build one slice of an approved spec in its own session and worktree, to the slice contract (tests, a real-system check, merge, deploy, DONE, card). Also used by the coordinator to start and track slice sessions. Use when the owner says "build the next slice", "start S<n>", or invokes /spec-build.
 ---
 
-# frame-slice: one slice, one session, done means done
+# spec-build: one slice, one session, done means done
 
 ## Roles
 
