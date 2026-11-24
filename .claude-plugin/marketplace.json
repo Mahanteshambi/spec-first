@@ -1,0 +1,7 @@
+{
+  "name": "claude-frame-local",
+  "owner": { "name": "Mahantesh Ambi" },
+  "plugins": [
+    { "name": "claude-frame", "source": "./", "description": "Spec-first build framework" }
+  ]
+}

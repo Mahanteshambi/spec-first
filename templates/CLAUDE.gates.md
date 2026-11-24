@@ -1,0 +1,24 @@
+## Build run rules (from claude-frame)
+
+Spec of record: `specs/NNN-<slug>/`. Code implements it; behaviour changes land
+in the spec first, in the same PR.
+
+### Owner gates: always ask first, one at a time, with exact steps
+<!-- Record the owner's answer word for word, with the date. -->
+- Money: broker or payment settings, any write that can reach a live account,
+  switching on a new order action, tax configuration.
+- Big decisions: cloud/IAM/secrets changes, paid model runs, irreversible
+  data changes that are not backed up, anything the spec lists as open.
+
+### Claude does without asking
+- Verify, merge and deploy slices that touch no gate above.
+- Before any table drop: a fresh backup, checked.
+
+### Never
+- Confirm or send a money action on the owner's behalf.
+- Deploy inside the blackout window: <e.g. 09:00-15:45 IST on trading days>.
+- Share a checkout or a test database between two sessions.
+
+### Reporting
+Outcome first, under 10 lines, no operations; one question at a time with
+options and a recommendation.
