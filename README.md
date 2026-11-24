@@ -16,7 +16,7 @@ Agents: `auditor`; debate roles `architect`, `data-engineer`,
 
 In Claude Code:
 
-    /plugin marketplace add /Users/mahantesh/data/git_workspace/spec-first
+    /plugin marketplace add Mahanteshambi/spec-first
     /plugin install spec-first@spec-first-local
 
 ## Per project
