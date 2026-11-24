@@ -37,9 +37,11 @@ then one question. No app code, no deletions, until the spec is approved.
 - Mark every line `[owner]` or `[proposal]`. Stop for "brief is right".
 
 ### A3 Debate → `debate/<role>.md`, then `decisions.md`
-- Pick 3–5 roles for the domain (default: architect, data engineer,
-  UX designer, domain expert, red team). Run `spec-debater` agents in
-  parallel, one per role, each reading `brief.md` and `audit.md`.
+- Run the role agents in parallel, each reading `brief.md` and `audit.md`:
+  `spec-architect`, `spec-data-engineer`, `spec-ux-designer`,
+  `spec-domain-expert` (name the domain in its prompt) and `spec-red-team`.
+  Drop a role the project doesn't need (no data → no data engineer); add
+  another domain expert if the project spans two domains.
 - Moderate: merge agreement into "agreed", cut what the brief rules out,
   and reduce the rest to at most ~8 owner choices. Ask them one at a time.
 - Record each answer as `D<n>` with the date and the owner's own words.

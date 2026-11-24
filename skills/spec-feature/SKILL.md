@@ -14,7 +14,7 @@ at a time with the answer picker.
 2. **Grill, 3–5 questions.** Why, what success looks like, what it must not
    break, any money or data impact. Write `brief.md`.
 3. **Debate only if risky** (money, data of record, security, a migration that
-   drops anything): 2–3 `spec-debater` roles, owner choices into
+   drops anything): 2–3 of the role agents (red team always, plus the roles the feature touches), owner choices into
    `decisions.md`. Otherwise record your calls there as `[proposal]`.
 4. **Mockup only if there is a screen.** One direction plus one alternative.
 5. **Spec delta.** New or changed `**AREA-NNN**` requirements with examples,
