@@ -12,5 +12,5 @@ Return numbered findings, most serious first, each with:
 - the question a builder would have to ask, and a proposed fix.
 Check: every requirement testable, each ID in exactly one slice, spec and
 design agree, terms defined once, outside systems' real rules stated
-(limits, tick sizes, auth expiry), migrations and rollbacks, done criteria.
+(rate limits, formats, auth expiry), migrations and rollbacks, done criteria.
 Do not edit files. Do not praise.

@@ -10,5 +10,5 @@ Report, in under 60 lines:
 - What works today, what is half-built, what is dead (no callers, no tests, off).
 - Data sources: where each number of record comes from, and how it is checked.
 - Label each item: keep / hide / delete / unknown, with one line of reason.
-- Risks a rebuild must not break (live money, data of record, running jobs).
+- Risks a rebuild must not break (payments, data of record, running jobs, live users).
 Cite file:line for every claim. Say "not checked" rather than guess.
