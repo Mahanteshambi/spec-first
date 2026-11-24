@@ -17,7 +17,7 @@ case ",$labels," in *",owner-approved,"*) exit 0 ;; esac
 files=$("${view[@]}" --json files --jq '.files[].path' 2>/dev/null || echo "")
 hits=$(printf '%s\n' "$files" | grep -E -f <(grep -vE '^\s*(#|$)' "$gates") || true)
 if [ -n "$hits" ]; then
-  echo "claude-frame gate: this PR touches owner-gated paths and has no owner-approved label:" >&2
+  echo "spec-first gate: this PR touches owner-gated paths and has no owner-approved label:" >&2
   printf '  %s\n' $hits >&2
   echo "Bring it to the owner with exact steps; never add the label yourself." >&2
   exit 2

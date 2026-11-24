@@ -1,4 +1,4 @@
-## Build run rules (from claude-frame)
+## Build run rules (from spec-first)
 
 Spec of record: `specs/NNN-<slug>/`. Code implements it; behaviour changes land
 in the spec first, in the same PR.

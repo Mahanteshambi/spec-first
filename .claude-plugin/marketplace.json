@@ -1,7 +1,14 @@
 {
-  "name": "claude-frame-local",
-  "owner": { "name": "Mahantesh Ambi" },
+  "name": "spec-first-local",
+  "owner": {
+    "name": "Mahantesh Ambi"
+  },
   "plugins": [
-    { "name": "claude-frame", "source": "./", "description": "Spec-first build framework" }
-  ]
+    {
+      "name": "spec-first",
+      "source": "./",
+      "description": "Spec-first build framework"
+    }
+  ],
+  "description": "Personal spec-first build framework"
 }

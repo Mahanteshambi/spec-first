@@ -1,6 +1,9 @@
 {
-  "name": "claude-frame",
+  "name": "spec-first",
   "version": "0.1.0",
   "description": "Spec-first build framework: define (audit, grill, debate, see, freeze), build (one slice per session, gated), close (soak, review, done).",
-  "author": { "name": "Mahantesh Ambi" }
+  "author": {
+    "name": "Mahantesh Ambi"
+  },
+  "license": "MIT"
 }

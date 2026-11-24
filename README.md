@@ -1,4 +1,4 @@
-# claude-frame
+# spec-first
 
 A Claude Code plugin for building a project, or a feature, spec first:
 
@@ -15,8 +15,8 @@ Agents: `frame-auditor`, `frame-debater`, `frame-spec-reviewer`, `frame-fixer`,
 
 In Claude Code:
 
-    /plugin marketplace add /Users/mahantesh/data/git_workspace/claude-frame
-    /plugin install claude-frame@claude-frame-local
+    /plugin marketplace add /Users/mahantesh/data/git_workspace/spec-first
+    /plugin install spec-first@spec-first-local
 
 ## Per project
 
