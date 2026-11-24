@@ -23,7 +23,7 @@ In Claude Code:
 1. `/spec-new` (or `/spec-feature` in a project that has a spec).
 2. Before building, copy `templates/CLAUDE.gates.md` into the project's
    CLAUDE.md and fill in the gates.
-3. Optional merge guard: list gated paths as regexes in `.frame/gated-paths`
+3. Optional merge guard: list gated paths as regexes in `.spec-first/gated-paths`
    (e.g. `^config/rules/`, `migrations/.*drop`). `gh pr merge` on a PR touching
    them is blocked unless it has the `owner-approved` label.
 

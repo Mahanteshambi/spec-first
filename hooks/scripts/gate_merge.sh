@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # Blocks `gh pr merge` when the PR touches a path listed in the project's
-# .frame/gated-paths (one regex per line) and lacks the owner-approved label.
-# No .frame/gated-paths file: the hook does nothing.
+# .spec-first/gated-paths (one regex per line) and lacks the owner-approved label.
+# No .spec-first/gated-paths file: the hook does nothing.
 set -euo pipefail
 input=$(cat)
 cmd=$(printf '%s' "$input" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("tool_input",{}).get("command",""))')
 case "$cmd" in *"gh pr merge"*) ;; *) exit 0 ;; esac
 root=$(git rev-parse --show-toplevel 2>/dev/null || pwd)
-gates="$root/.frame/gated-paths"
+gates="$root/.spec-first/gated-paths"
 [ -f "$gates" ] || exit 0
 pr=$(printf '%s' "$cmd" | sed -nE 's/.*gh pr merge[[:space:]]+([0-9]+).*/\1/p')
 view=(gh pr view)
